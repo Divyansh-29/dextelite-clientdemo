@@ -14,7 +14,7 @@
     />
 
     <!-- Your CSS (put styles.css in Laravel's public/ folder) -->
-    <link rel="stylesheet" href="{{ asset('styles.css') }}" />
+    <link rel="stylesheet" href="/styles.css" />
   </head>
   <body>
     <!-- Loader overlay -->
@@ -77,7 +77,7 @@
                         muted
                         playsinline
                     >
-                        <source src="{{ asset('video.mp4') }}" type="video/mp4" />
+                        <source src="/video.mp4" type="video/mp4" />
                         Your browser does not support the video tag.
                     </video>
 
@@ -275,9 +275,9 @@
                   id="step2Video"
                   class="full-video"
                   preload="metadata"
-                  poster="{{ asset('video-thumbnail.jpg') }}"
+                  poster="/video-thumbnail.jpg"
                 >
-                  <source src="{{ asset('video.mp4') }}" type="video/mp4" />
+                  <source src="/video.mp4" type="video/mp4" />
                   Your browser does not support the video tag.
                 </video>
 
@@ -494,6 +494,6 @@
     </div>
 
     <!-- Your JS (put script.js in public/ folder) -->
-    <script src="{{ asset('script.js') }}"></script>
+    <script src="/script.js"></script>
   </body>
 </html>
