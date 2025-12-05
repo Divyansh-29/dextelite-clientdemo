@@ -5,7 +5,7 @@ WORKDIR /app
 
 # Only copy composer files at first to use Docker cache
 COPY composer.json composer.lock ./
-RUN composer install --no-dev --no-interaction --prefer-dist --no-progress
+RUN composer install --no-dev --no-interaction --prefer-dist --no-progress --no-scripts
 
 # ---------- Stage 2: PHP + Apache image ----------
 FROM php:8.2-apache
