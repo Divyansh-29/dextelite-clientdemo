@@ -1,0 +1,9 @@
+.git
+node_modules
+vendor
+storage/logs
+storage/framework/cache
+npm-debug.log
+yarn-error.log
+.idea
+.vscode
